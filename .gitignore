@@ -1,0 +1,18 @@
+# KiCad
+
+OpenFanHub-backups/
+~OpenFanHub.kicad_sch.lck
+fp-info-cache
+~_autosave-OpenFanHub.kicad_pcb.lck
+_autosave-OpenFanHub.kicad_pcb
+\#auto_saved_files#
+~OpenFanHub.kicad_pcb.lck
+
+# CubeIDE
+.settings/
+Debug/
+Release/
+.metadata/
+
+# VS Code
+.vscode/
