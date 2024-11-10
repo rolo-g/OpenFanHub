@@ -1,3 +1,3 @@
-[submodule "Software/STM32/OFH-App-Proto/tinyusb"]
-	path = Software/STM32/OFH-App-Proto/tinyusb
+[submodule "Software/STM32/OFH-App-Proto/TinyUSB"]
+	path = Software/STM32/OFH-App-Proto/TinyUSB
 	url = https://github.com/hathach/tinyusb.git

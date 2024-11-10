@@ -80,37 +80,37 @@ Core/Src/syscalls.c \
 Core/Src/usb.c \
 Core/Src/app.c \
 Core/Src/usb_descriptors.c \
-tinyusb/src/portable/st/stm32_fsdev/dcd_stm32_fsdev.c \
+TinyUSB/src/portable/st/stm32_fsdev/dcd_stm32_fsdev.c \
 Core/Src/crc.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_crc.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_crc_ex.c
 
 # Taken from tinyusb/src/tinyusb.mk
 C_SOURCES += \
-	tinyusb/src/tusb.c \
-	tinyusb/src/common/tusb_fifo.c \
-	tinyusb/src/device/usbd.c \
-	tinyusb/src/device/usbd_control.c \
-	tinyusb/src/typec/usbc.c \
-	tinyusb/src/class/audio/audio_device.c \
-	tinyusb/src/class/cdc/cdc_device.c \
-	tinyusb/src/class/dfu/dfu_device.c \
-	tinyusb/src/class/dfu/dfu_rt_device.c \
-	tinyusb/src/class/hid/hid_device.c \
-	tinyusb/src/class/midi/midi_device.c \
-	tinyusb/src/class/msc/msc_device.c \
-	tinyusb/src/class/net/ecm_rndis_device.c \
-	tinyusb/src/class/net/ncm_device.c \
-	tinyusb/src/class/usbtmc/usbtmc_device.c \
-	tinyusb/src/class/video/video_device.c \
-	tinyusb/src/class/vendor/vendor_device.c \
-  tinyusb/src/host/usbh.c \
-  tinyusb/src/host/hub.c \
-  tinyusb/src/class/cdc/cdc_host.c \
-  tinyusb/src/class/hid/hid_host.c \
-  tinyusb/src/class/msc/msc_host.c \
-  tinyusb/src/class/vendor/vendor_host.c \
-  tinyusb/src/typec/usbc.c \
+	TinyUSB/src/tusb.c \
+	TinyUSB/src/common/tusb_fifo.c \
+	TinyUSB/src/device/usbd.c \
+	TinyUSB/src/device/usbd_control.c \
+	TinyUSB/src/typec/usbc.c \
+	TinyUSB/src/class/audio/audio_device.c \
+	TinyUSB/src/class/cdc/cdc_device.c \
+	TinyUSB/src/class/dfu/dfu_device.c \
+	TinyUSB/src/class/dfu/dfu_rt_device.c \
+	TinyUSB/src/class/hid/hid_device.c \
+	TinyUSB/src/class/midi/midi_device.c \
+	TinyUSB/src/class/msc/msc_device.c \
+	TinyUSB/src/class/net/ecm_rndis_device.c \
+	TinyUSB/src/class/net/ncm_device.c \
+	TinyUSB/src/class/usbtmc/usbtmc_device.c \
+	TinyUSB/src/class/video/video_device.c \
+	TinyUSB/src/class/vendor/vendor_device.c \
+  TinyUSB/src/host/usbh.c \
+  TinyUSB/src/host/hub.c \
+  TinyUSB/src/class/cdc/cdc_host.c \
+  TinyUSB/src/class/hid/hid_host.c \
+  TinyUSB/src/class/msc/msc_host.c \
+  TinyUSB/src/class/vendor/vendor_host.c \
+  TinyUSB/src/typec/usbc.c \
 
 # ASM sources
 ASM_SOURCES =  \
@@ -179,8 +179,8 @@ C_INCLUDES =  \
 -IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 \
 -IDrivers/CMSIS/Device/ST/STM32F0xx/Include \
 -IDrivers/CMSIS/Include \
--Itinyusb/src \
--Itinyusb/hw
+-ITinyUSB/src \
+-ITinyUSB/hw
 
 # C warnings
 C_WARNINGS =  \
