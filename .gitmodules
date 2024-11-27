@@ -1,3 +1,6 @@
 [submodule "Software/STM32/OFH-App-Proto/TinyUSB"]
 	path = Software/STM32/OFH-App-Proto/TinyUSB
 	url = https://github.com/hathach/tinyusb.git
+[submodule "Software/STM32/OFH-App-Proto/MAX31790_Driver"]
+	path = Software/STM32/OFH-App-Proto/MAX31790_Driver
+	url = https://github.com/rolo-g/MAX31790_Driver.git
