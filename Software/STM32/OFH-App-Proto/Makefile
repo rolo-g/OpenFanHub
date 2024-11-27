@@ -83,7 +83,8 @@ Core/Src/usb_descriptors.c \
 TinyUSB/src/portable/st/stm32_fsdev/dcd_stm32_fsdev.c \
 Core/Src/crc.c \
 Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_crc.c \
-Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_crc_ex.c
+Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_crc_ex.c \
+MAX31790_Driver/max31790/max31790.c
 
 # Taken from tinyusb/src/tinyusb.mk
 C_SOURCES += \
@@ -180,7 +181,8 @@ C_INCLUDES =  \
 -IDrivers/CMSIS/Device/ST/STM32F0xx/Include \
 -IDrivers/CMSIS/Include \
 -ITinyUSB/src \
--ITinyUSB/hw
+-ITinyUSB/hw \
+-IMAX31790_Driver/max31790
 
 # C warnings
 C_WARNINGS =  \
