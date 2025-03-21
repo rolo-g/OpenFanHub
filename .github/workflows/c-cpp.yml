@@ -1,0 +1,38 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "testing-actions" ]
+  pull_request:
+    branches: [ "testing-actions" ]
+  workflow_dispatch:  # Add this line!
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Dependencies
+      run: sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi
+
+    - name: Build
+      run: make -C Software/STM32/OFH-App-Proto/
+
+    - name: Run check (if target exists)
+      run: |
+        if make -q check -C Software/STM32/OFH-App-Proto/; then
+          make check -C Software/STM32/OFH-App-Proto/
+        else
+          echo "Makefile does not have a 'check' target. Skipping."
+        fi
+
+    - name: Run distcheck (if target exists)
+      run: |
+          if make -q distcheck -C Software/STM32/OFH-App-Proto/ 2>/dev/null; then
+            make distcheck -C Software/STM32/OFH-App-Proto/
+          else
+            echo "Makefile does not have a 'distcheck' target. Skipping."
+          fi
